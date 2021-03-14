@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-width, initial=scale=1">
+
+	<title>SpaceX Launch Programs</title>
+
+	<style type="text/css">
+		body{
+			background-color: #EAEDED;
+			font-family: sans-serif;
+			margin: 20px;
+		}
+	
+		.columns-container{
+			width: 100%;
+			height: 1000px;
+			margin-top: 5px;
+		}
+		
+		.column{
+			height: 50%;
+		}
+		
+		.parts{
+			width: 100%;
+		}
+		
+		.blocks{
+			width: 19%;
+			background-color: white;
+			border-radius: 5px;
+			height: 450px;
+			float: left;
+			margin: 1% 1% 1% 0;
+		}
+		
+		.filters{
+			background-color: white;
+			border: 1px solid white;
+			border-radius: 5px;
+		}
+		
+		.launch{ 
+			position: relative; 
+			top: -20px;
+			text-decoration: underline;
+			margin-left: 40px; 
+		}
+		
+		.years-container{
+			position: relative; 
+			top: -50px;
+		}
+		
+		table{
+			margin: 1px 8px;
+			border-spacing: 20px;
+			position: relative; top: -2px;
+		}
+		
+		td{
+			width: 125px;
+			font-size: 14px;
+		}
+		
+		.table a:link, a:visited{
+			background-color: #a4d880;
+			color:black;
+			text-align: center;
+			text-decoration: none;
+			padding: 5px 15px;
+			border-radius: 5px;
+		}
+		
+		.table a:hover,a:active{
+			background-color: #669900;
+		}
+		
+		.blocks-inside-blocks{
+			height: 50%;
+			width: 90%;
+			margin: 5%;
+		}
+		
+		.insider-block{
+			position: relative;
+			top: -4%;
+		}
+		
+		.img-style{
+			width: 100%;
+			height: 100%;
+			background-color: #EAEDED;
+		}
+		
+		.footer{
+			position: fixed;
+			bottom: 0;
+			text-align: center;
+			width: 100%;
+		}
+		
+		@media only screen and (max-width: 700px){
+			.row, .side-container, .columns-container, .filters, .launch, .years-container, .table, .table td, .table tr, .table a, .launch-status, .land-status, .below-filters,
+			.parts, .blocks, .blocks-inside-blocks, .img-style, .footer{
+				width: 100%;
+			}
+		}
+		
+		@media only screen and (max-width: 700px){
+			.launch{
+				text-align: center;
+				margin-left:20px;
+			}
+		}
+		
+		@media only screen and (max-width: 700px){
+			.table{
+				text-align: center;
+				margin-left: -78px;
+				border-spacing: -10px;
+			}
+		}
+		
+		@media only screen and (max-width: 700px){
+			.blocks-inside-blocks{
+				width: 90%;
+				margin: 2% 5%;
+			}
+		}
+		
+		
+		
+		#first-block{
+			height: 600px;
+		}
+		
+		#empty-block{
+			background-color: #EAEDED;
+		}
+		@media only screen and (min-width: 1024px) and (max-width:1440px){
+				text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<header><h2>SpaceX Launch Programs</h2></header>
+	<div class="columns-container">
+		<div class=" column parts">
+			<div class="blocks" id="first-block">
+				<div class=" filters">
+					<p style="padding-left: 10px; position: relative; top: -8px;"><strong>Filters</strong></p>
+					<p class="launch">Launch Year</p>
+				
+					<div class="years-container">
+						<table class="table">
+						<tr>
+						<td><a href="webpage-2006.html">2006</a></td>
+						<td><a href="webpage-2007.html">2007</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="webpage-2008.html">2008</a></td>
+						<td><a href="webpage-2009.html">2009</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="webpage-2010.html">2010</a></td>
+						<td><a href="webpage-2011.html">2011</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="webpage-2012.html">2012</a></td>
+						<td><a href="webpage-2013.html">2013</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="webpage-2014.html">2014</a></td>
+						<td><a href="#">2015</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="#">2016</a></td>
+						<td><a href="#">2017</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="#">2018</a></td>
+						<td><a href="#">2019</a></td>
+						</tr>
+						
+						<tr>
+						<td><a href="#">2020</a></td>
+						</tr>
+						</table>
+					</div>
+					<div class="launch-status">
+						<p class="launch" style="position: relative; top: -50px">Successful Launch</p>
+							<table class="table" style="position: relative; top: -75px">
+								<tr>
+								<td><span style="font-size: 14px"><a href="#">True</a></td>
+								<td><span style="font-size: 14px"><a href="#">False</a></td>
+								</tr>
+							</table>
+					</div>
+					<div class="land-status">
+						<p class="launch" style="position: relative; top: -90px">Successful Landing</p>
+							<table class="table" style="position: relative; top: -115px">
+								<tr>
+								<td><span style="font-size: 14px"><a href="#">True</a></td>
+								<td><span style="font-size: 14px"><a href="#">False</a></td>
+								</tr>
+							</table>
+					</div>
+				</div>
+			</div>
+			<div class="blocks">
+				<div class="blocks-inside-blocks">
+					<a href="Thaicom 6.html"><img src="https://images2.imgbox.com/d8/6d/fnqIBEJh_o.png" class="img-style"></a>
+				</div>
+				<div class="blocks-inside-blocks insider-block">
+					<h5 style="color: blue; position: relative; top: -5px;">Thaicom 6 #13</h5>
+					<h5 style="position: relative; top: -25px;">Mission Ids: 9D1B7E0</h5>
+					<h5 style="position: relative; top: -35px;">Launch Year: 2014</h5> 
+					<h5 style="position: relative; top: -45px;">Successful</h5><br>
+					<h5 style="position: relative; top: -110px;">Launch: </h5>
+					<h5 style="position: relative; top: -160px; left: 80px;">True</h5>
+					<h5 style="position: relative; bottom: 160px;">Successful</h5><br>
+					<h5 style="position: relative; bottom: 222px;">Landing: </h5>
+				</div>
+			</div>
+			<div class="blocks">
+				<div class="blocks-inside-blocks">
+					<a href="CRS-3.html"><img src="https://images2.imgbox.com/a0/cb/s1h2RuR0_o.png" class="img-style"></a>
+				</div>
+				<div class="blocks-inside-blocks insider-block">
+					<h5 style="color: blue; position: relative; top: -5px;">CRS-3 #14</h5>
+					<h5 style="position: relative; top: -25px;">Mission Ids: EE86F74</h5>
+					<h5 style="position: relative; top: -35px;">Launch Year: 2014</h5> 
+					<h5 style="position: relative; top: -45px;">Successful</h5><br>
+					<h5 style="position: relative; top: -110px;">Launch: </h5>
+					<h5 style="position: relative; top: -160px; left: 80px;">True</h5>
+					<h5 style="position: relative; bottom: 160px;">Successful</h5><br>
+					<h5 style="position: relative; bottom: 222px;">Landing: </h5>
+				</div>
+			</div>
+			<div class="blocks">
+				<div class="blocks-inside-blocks">
+					<a href="OG-2 Mission 1.html"><img src="https://images2.imgbox.com/a7/b4/bcMrHMey_o.png" class="img-style"></a>
+				</div>
+				<div class="blocks-inside-blocks insider-block">
+					<h5 style="color: blue; position: relative; top: -5px;">OG-2 Mission 1 #15</h5>
+					<h5 style="position: relative; top: -25px;">Mission Ids: CE91D46</h5>
+					<h5 style="position: relative; top: -35px;">Launch Year: 2014</h5> 
+					<h5 style="position: relative; top: -45px;">Successful</h5><br>
+					<h5 style="position: relative; top: -110px;">Launch: </h5>
+					<h5 style="position: relative; top: -160px; left: 80px;">True</h5>
+					<h5 style="position: relative; bottom: 160px;">Successful</h5><br>
+					<h5 style="position: relative; bottom: 222px;">Landing: </h5>
+				</div>
+			</div>
+			<div class="blocks">
+				<div class="blocks-inside-blocks">
+					<a href="AsiaSat 8.html"><img src="https://images2.imgbox.com/bf/12/oSP2EwNz_o.png" class="img-style"></a>
+				</div>
+				<div class="blocks-inside-blocks insider-block">
+					<h5 style="color: blue; position: relative; top: -5px;">AsiaSat 8 #16</h5>
+					<h5 style="position: relative; top: -25px;">Mission Ids: 593B499</h5>
+					<h5 style="position: relative; top: -35px;">Launch Year: 2014</h5> 
+					<h5 style="position: relative; top: -45px;">Successful</h5><br>
+					<h5 style="position: relative; top: -110px;">Launch: </h5>
+					<h5 style="position: relative; top: -160px; left: 80px;">True</h5>
+					<h5 style="position: relative; bottom: 160px;">Successful</h5><br>
+					<h5 style="position: relative; bottom: 222px;">Landing: </h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p><strong>Developed by:</strong> Swathi</p>
+	</div>
+</body>
+
+</html>
+
